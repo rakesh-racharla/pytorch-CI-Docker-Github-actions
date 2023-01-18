@@ -33,11 +33,11 @@ TensorBoard 2.6.0 at http://localhost:6006/ (Press CTRL+C to quit)
 Follow the instructions printed to the terminal to view Tensorboard in a browser.
 
 
-# For Githhub Actions CICD
+# For Building Docker Image
 
 - Clone the repo (optional)
 ```shell
-git clone https://github.com/rakesh-racharla/pytorch-ML-CI-CD-github-actions.git
+git clone https://github.com/rakesh-racharla/pytorch-CI-Docker-Github-actions.git
 ```
  - Make changes if needed and commit.
  - Every push will trigger a new build.

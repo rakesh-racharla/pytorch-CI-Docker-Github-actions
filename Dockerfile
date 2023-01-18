@@ -7,7 +7,7 @@ WORKDIR /app
 # install requirements
 #RUN docker run -i -t /bin/bash -c conda config --set restore_free_channel true
 #RUN /bin/bash conda activate pytorchenv
-RUN docker run -i -t /bin/bash -c /bin/bash conda install -n pytorchenv -f conda.yaml
+RUN /bin/bash -c conda install -n pytorchenv -f conda.yaml
 RUN pip install -r requirements.txt
 
 # running the application

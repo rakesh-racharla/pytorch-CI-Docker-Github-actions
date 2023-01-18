@@ -6,7 +6,8 @@ WORKDIR /app
 
 # install requirements
 RUN conda config --set restore_free_channel true
-RUN conda create -n pytorchenv -f conda.yaml
+RUN conda activate pytorchenv
+RUN conda update -n pytorchenv -f conda.yaml
 RUN pip install -r requirements.txt
 
 # running the application
